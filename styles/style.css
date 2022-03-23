@@ -2,11 +2,11 @@
 body {
     /* feel free to update these css variables for a quick theme */
     
-    --color1: white;
-    --color2: white;
-    --color3: white;
-    --color4: white;
-    --color5: white;
+    --color1: gold;
+    --color2: gold;
+    --color3: gold;
+    --color4: gold;
+    --color5: gold;
     
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
         
@@ -28,7 +28,7 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: gold;
 }
 
 main {
@@ -40,16 +40,17 @@ main {
 }
 
 section {
-    background-color: var(--color5);
-    max-width: 80%;
+    background-color: gold;
+	height: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: var(--gutter);
+    /*padding-top: var(--gutter);
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
-    margin-bottom: var(--gutter);
+    margin-bottom: var(--gutter);*/
     border: solid 2px var(--color1);
 }
 
@@ -88,4 +89,20 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+
+#retainer-list-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+#retainer-list img {
+	margin: 45px;
+	width: 80%;
+}
+
+.retainer-card img {
+	width: 150px;
 }
