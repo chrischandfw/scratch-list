@@ -1,8 +1,16 @@
 // import functions and grab DOM elements
-
+import { getRetainers } from './fetch-utils.js';
+import { renderRetainerCard } from './render-utils.js'; 
 // let state
-
+const retainerListContainer = document.getElementById('retainer-list-container');
 // set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+
+window.addEventListener('load', async () => {
+    const retainers = await getRetainers();
+
+    for (let retainer of retainers) {
+        const retainerEl = renderRetainerCard(retainer);
+        retainerListContainer.append(retainerEl);
+    }
+});
+
