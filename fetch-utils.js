@@ -5,7 +5,7 @@ const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 export async function getRetainers() {
     const response = await client
-        .from('retainers')
+        .from('Retainers')
         .select('*');
 
     return response.body;
