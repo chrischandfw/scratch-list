@@ -54,13 +54,13 @@ section {
     border: solid 2px var(--color1);
 }
 
-header {
+/*header {
     display: flex;
     justify-content: flex-end;
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
-}
+}*/
 
 
 h2 {
@@ -105,4 +105,28 @@ footer {
 
 .retainer-card img {
 	width: 150px;
+}
+
+.retainer-detail {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 600px;
+}
+
+.retainer-detail .name {
+	font-size: 2rem;
+}
+
+.retainer-card {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadow);
+    padding: 10px;
+    margin: 20px;
+    background-color: goldenrod;
+    text-align: center;
+    transition: all .1s ease-in-out;
 }
