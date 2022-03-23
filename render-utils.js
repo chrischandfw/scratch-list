@@ -16,3 +16,12 @@ export function renderRetainerCard(retainer) {
     return a;
 }
 
+export function renderRetainerDetail(retainer) {
+    const div = document.createElement('div');
+    const img = document.createElement('img');
+    const nameEl = document.createElement('h3');
+    const specialEl = document.createElement('p');
+    const strengthEl = document.createElement('p');
+    const attackEl = document.createElement('p');
+    const backgroundEl = doucment.createElement('p');
+}
