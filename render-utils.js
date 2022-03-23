@@ -33,10 +33,10 @@ export function renderRetainerDetail(retainer) {
     img.src = retainer.image;
 
     specialEl.textContent = `Specialty: ${retainer.specialty}`;
-    strengthEl.textContent = `Strength: ${retainer.strength}`;
-    attackEl.textContent = `Attack: ${retainer.attack}`;
+    strengthEl.textContent = `Strength: ${retainer.Strength}`;
+    attackEl.textContent = `Attack: ${retainer.Attack}`;
 	
-    backgroundEl.textContent = retainer.background;
+    backgroundEl.textContent = retainer.Background;
     backgroundEl.classList.add('background-story');
 	
     div.append(nameEl, img, specialEl, strengthEl, attackEl, backgroundEl);
