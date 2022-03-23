@@ -23,5 +23,23 @@ export function renderRetainerDetail(retainer) {
     const specialEl = document.createElement('p');
     const strengthEl = document.createElement('p');
     const attackEl = document.createElement('p');
-    const backgroundEl = doucment.createElement('p');
+    const backgroundEl = document.createElement('p');
+
+    div.classList.add('retainer-detail');
+    
+    nameEl.textContent = retainer.name;
+    nameEl.classList.add('name');
+
+    img.src = retainer.image;
+
+    specialEl.textContent = `Specialty: ${retainer.specialty}`;
+    strengthEl.textContent = `Strength: ${retainer.strength}`;
+    attackEl.textContent = `Attack: ${retainer.attack}`;
+	
+    backgroundEl.textContent = retainer.background;
+    backgroundEl.classList.add('background-story');
+	
+    div.append(nameEl, img, specialEl, strengthEl, attackEl, backgroundEl);
+
+    return div;
 }
